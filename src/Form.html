@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head class="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Homepage</title>
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-white mb-4">
+        <a href="index.html"
+            class="text-lg text-black hover:text-gray-500 hover:bg-black hover:text-white p-2">Homepage</a>
+        <a href="About.html"
+            class="text-lg text-black hover:text-gray-500 hover:bg-black hover:text-white p-2">About</a>
+        <a href="Education.html"
+            class="text-lg text-black hover:text-gray-500 hover:bg-black hover:text-white p-2">Education</a>
+        <a href="Hobby.html"
+            class="text-lg text-black hover:text-gray-500 hover:bg-black hover:text-white p-2">Hobby</a>
+        <a href="Contact.html"
+            class="text-lg text-black hover:text-gray-500 hover:bg-black hover:text-white p-2">Contact</a>
+        <a href="Form.html" 
+            class="text-lg text-black hover:text-gray-500 hover:bg-black hover:text-white p-2">Form</a>
+    </nav>
+</head>
+
+<body class="bg-[#054835]">
+    <div class="h-full w-full flex flex-col justify-center items-center">
+        <h1 class="text-5xl text-white">School of Computer Science & Engineering</h1>
+    </div>
+    <form class="p-4 space-y-2">
+        <h2 class="text-3xl text-white">Register form</h2>
+        <div class="flex flex-row space-x-2 items-center">
+            <h3 class="text-xl text-white">Full name</h3>
+            <input type="text" id="name">
+        </div>
+        <div class="flex flex-row space-x-2 items-center">
+            <h3 class="text-xl text-white">ID</h3>
+            <input type="text" id="id">
+        </div>
+        <div class="flex flex-row space-x-2 items-center">
+            <h3 class="text-xl text-white">Email</h3>
+            <input type="email" id="email">
+        </div>
+        <div class="flex flex-row space-x-2 items-center">
+            <h3 class="text-xl text-white">Gender</h3>
+            <input type="radio" value="male" >Male <input type="radio" value="female">female
+        </div>
+        <div class="flex flex-row space-x-2 items-center">
+            <h3 class="text-xl text-white">Field of study</h3>
+            <div>
+                <select>
+                    <option value="CS">CS</option>
+                    <option value="IM">IM</option>
+                    <option value="EE">EE</option>
+                    <option value="BA">BA</option>
+                    <option value="BE">BE</option>
+                </select>
+            </div>
+            
+        </div>
+        <div class="flex flex-row space-x-2 items-center">
+            <h3 class="text-xl text-white">List of subject</h3>
+            <div>
+                <input type="checkbox" name="c1" value="ON">Principle of EE 1 <br>
+                <input type="checkbox" name="c2" value="ON">Computer Network <br>
+                <input type="checkbox" name="c3" value="ON">Web Application Development<br>
+                <input type="checkbox" name="c4" value="ON">Object Oriented Programming<br>
+                <input type="checkbox" name="c5" value="ON">Computer Graphics<br>
+            </div>
+        </div>
+        <div class="flex flex-row space-x-2 items-center">
+            <h3 class="text-xl text-white">Comment</h3>
+            <textarea rows="10" cols="50"></textarea><br>
+        </div>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded">Submit</button>
+        <button type="reset" class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded">Cancel</button>
+    </form>
+    
+</body>
+
+</html>
